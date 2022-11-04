@@ -1,0 +1,14 @@
+<ng-container *ngIf="sesion$ | async as sesion">
+    <mat-sidenav-container class="example-container" color="primary" *ngIf="sesion.sesionActiva">
+        <mat-sidenav mode="side" opened>
+            <h3 style="color: #fff;">Bienvenido {{ sesion.usuarioActivo?.usuario }}</h3>
+            <ul>
+                <li><a mat-button routerLink="" >Inicio</a></li>
+                <li><a mat-button routerLink="autenticacion/login">Login</a></li>
+                <li><a mat-button routerLink="alumnos/lista">Alumnos</a></li>
+                <li><a mat-button routerLink="cursos/lista">Cursos</a></li>
+                <li><a mat-button routerLink="clases/lista">Clases</a></li>
+            </ul>
+        </mat-sidenav>
+    </mat-sidenav-container>
+</ng-container>
