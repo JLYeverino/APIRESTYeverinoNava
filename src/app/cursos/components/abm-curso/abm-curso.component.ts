@@ -47,7 +47,7 @@ export class AbmCursoComponent implements OnInit, OnDestroy  {
   openDialog(action:string,obj:any) {
     obj.action = action;
     const dialog = this.dialog.open(DialogCursoComponent, {
-      width: '45%',
+      width: '60%',
       height: '45%',
       panelClass: 'custom-modalbox',
       data:obj,
